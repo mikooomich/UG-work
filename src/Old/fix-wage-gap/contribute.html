@@ -1,0 +1,152 @@
+<!-- Kelvin's work -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fix the Wage Gap</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/contribute.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <header>
+    <a href="/index.html "class="logo">Fix the Wage Gap!</a>
+    <nav>
+        <div class="nav">
+            <p>
+                <a href="/database.html">Browse database</a>
+            </p>
+            <p>
+                <a href="/about.html">About our mission</a>
+            </p>
+            <p>
+                <a href="/support.html">Support</a>
+            </p>
+            <p>
+              <a href="/contribute.html">Contribute to the database</a>
+            </p>
+            <p>
+              <a href="/account.html">Account</a>
+          </p>
+        </div>
+    </nav>
+  </header>
+
+  <body>
+    <div id="infoForDatabase">
+      <div>
+        Add your information to our database! (Work in process, need to implement live database- which is part of wishlist)
+      </div>
+      <img src="https://live.staticflickr.com/5500/10543703794_51c288e414_b.jpg" >
+      
+    </div>
+
+    <div id="contribute">
+      <p>First name:</p>
+      <input type="text" id="addedFirstName" size="55" style="height: 25px;"><br>
+
+      <p>Last name:</p>
+      <input type="text" id="addedLastName" size="55" style="height: 25px;"><br>
+
+      <p>Yearly Salary:</p>
+      <input type="text" id="addedIncome" size="55" style="height: 25px;"><br>
+
+      <p>Age:<p>
+      <input type="text" id="addedAge" size="55" style="height: 25px;"><br>
+
+      <p>Job Title:</p>
+      <input type="text" id="addedJob" size="55" style="height: 25px;"><br>
+
+      <p>Name of the company:</p>
+      <input type="text" id="addedCompany" size="55" style="height: 25px;"><br>
+
+      <p>Number of years at the job:</p>
+      <input type="text" id="addedYearsOfExperience" size="55" style="height: 25px;"><br>
+      
+      <p>Brief description of your role at the job:</p>
+      <textarea id="addedExperience" rows="4" cols="50"></textarea><br>
+
+      <p>Ethnicity:</p>
+      <select id="addedEthnicity" >
+          <option>Not Selected</option>
+          <option>Caucasian</option>
+          <option>West Asian</option>
+          <option>Latin American</option>
+          <option>Southeast Asian</option>
+          <option>Arab</option>
+          <option>Filipino</option>
+          <option>African American</option>
+          <option>Korean</option>
+          <option>Japanese</option>
+          <option>Chinese</option>
+          <option>Visible minority, other</option>
+          <option>Multiple visible minorities</option>
+      </select>
+
+      <p> Religious Affliation:</p>
+          <select id="addedReligion">
+            <option>Not Selected</option>
+            <option>Christian</option>
+            <option>Muslim</option>
+            <option>Hindu</option>
+            <option>Sikh</option>
+            <option>Buddhist</option>
+            <option>Jewish</option>
+            <option>No religious affliation</option>
+            <option>Other</option>
+          </select>
+
+      <p> Gender:</p>
+      <select id="addedGender">
+          <option>Not Selected</option>
+          <option>male</option>
+          <option>female</option>
+          <option>transgender</option>
+          <option>gender neutral</option>
+          <option>non-binary</option>
+          <option>agender</option>
+          <option>pangender</option>
+          <option>genderqueer</option>
+          <option>two-spirit</option>
+          <option>third gender</option>
+      </select>
+
+      <p> Sexual Orientation</p>
+      <select id="addedSOrientation">
+          <option>Not Selected</option>
+          <option>heterosexual</option>
+          <option>homosexual</option>
+          <option>bisexual</option>
+          <option>asexual</option>
+      </select><br>
+
+      <button id="submitButton">Submit</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="classes/People.js"></script>
+    <script src="scripts/database.js"></script>
+
+  </body>
+
+  <footer>
+    <p>
+      <a href="/privacy.html">Privacy Policy</a>
+    </p>
+    <p>
+      <a href="/support.html">Support</a>
+    </p>
+    <p>
+      <a href="/citations.html">Sources</a>
+    </p>
+  </footer>
+
+</html>

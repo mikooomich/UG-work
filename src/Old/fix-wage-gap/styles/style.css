@@ -1,0 +1,90 @@
+html {
+  font-family: Roboto;
+  display: block
+}
+
+.logo {
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 200%;
+  color: orange;
+  padding-right: 60px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 64px;
+  background-color: white;
+  padding-left: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.nav p {
+  margin-right: 40px;
+}
+
+.nav p a {
+  color: grey;
+  text-decoration: none;
+}
+
+.homePageImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.homePageImage img {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: 450px;
+}
+
+.homePageImage div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  text-align: center;
+  padding: 3px;
+  background-color: orange;
+  margin-left:-15px;
+  margin-right:-15px;
+  color: white;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.button{
+  display:inline-block;
+  padding:0.2em 1.45em;
+  margin:0.2em;
+  background-color: orange;
+  text-decoration:none;
+  font-weight:400;
+  color:white;
+  border-radius: 20px;
+  text-align:center;
+}

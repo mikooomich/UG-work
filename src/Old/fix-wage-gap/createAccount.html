@@ -1,0 +1,80 @@
+<!-- Michael -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fix the Wage Gap</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/account.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"/>
+  </head>
+    
+  <header>
+    <a href="/index.html "class="logo">Fix the Wage Gap!</a>
+    <nav>
+        <div class="nav">
+          <p>
+              <a href="/database.html">Browse database</a>
+          </p>
+          <p>
+              <a href="/about.html">About our mission</a>
+          </p>
+          <p>
+              <a href="/support.html">Support</a>
+          </p>
+          <p>
+            <a href="/contribute.html">Contribute to the database</a>
+          </p>
+          <p>
+            <a href="/account.html">Account</a>
+          </p>
+        </div>
+    </nav>
+  </header>
+
+  <body>
+
+    <div style="font-size: xx-large; text-align: center; padding-top: 100px;">Input your credentials</div>
+
+    <div class = "loginBoxes">
+      <p></p>
+      <p></p>
+      <p id='outputBox'></p>
+      <input type="text" placeholder="Username" id="usernameBox" style="align-items: center; justify-content: center;">
+      <p></p>
+      <input type="password" placeholder="Password" id="passwordBox">
+      <p></p>
+      <input type="password" placeholder="Confirm Password" id="confirmPasswordBox">
+      <p></p>
+      <input type="text" placeholder="Email" id="emailBox">
+      <p></p>
+      <input type="text" placeholder="DOB (DD/MM/YYYY)" id="birthdayBox">
+      <p></p>
+
+      <button onclick="makeCredentials()">Sign Up</button>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/login.js" ></script>
+    
+
+  </body>
+
+ 
+
+  <footer style="position: absolute; bottom: 0; width: 100%;">
+    <p>
+      <a href="/privacy.html">Privacy Policy</a>
+    </p>
+    <p>
+      <a href="/support.html">Support</a>
+    </p>
+    <p>
+      <a style="display: inline-block;" href="/citations.html">Sources</a>
+    </p>
+    <button style="position: relative; display: inline-block; opacity: 0;" onclick="destroy()">hidden button</button>
+  </footer>
+
+</html>
+

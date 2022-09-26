@@ -1,0 +1,115 @@
+/* Kelvin's work */
+
+.discriminationTags li {
+  display: inline;
+  font-size: 25px;
+  padding-right: 24px;
+}
+
+.discriminationTags span {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 15px;
+  margin-right: 6px;
+  background-color: rgb(219, 219, 219);
+}
+
+.job{
+  padding-left: 40px;
+  font-size: small
+}
+
+.heading{
+  padding-left: 40px;
+  
+}
+
+.income{
+  padding-left: 40px;
+}
+
+.info{
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.border{
+  border-style:hidden;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #b8b6b6;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+  
+.filters{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10%;
+    float: left;
+  }
+  
+#databaseSection {
+  width: 100%;
+  margin: auto;
+}
+
+#dynamicPage{
+  width: 85%;
+  float: right;
+  height:280px; 
+}
+
+#searchBox{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  padding: 5px;
+  display: block;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#sortSection{
+  display: flex;
+  float: right;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+#sortSection p{
+  margin-right: 10px;
+}
+
+#infoForDatabase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+#infoForDatabase img {
+  flex-shrink: 0;
+  min-width: 100%;
+  height: 450px;
+
+}
+
+#infoForDatabase div{
+  position: absolute;
+  top: 50%;
+
+  font-size: xx-large;
+}
