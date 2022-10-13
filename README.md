@@ -1,6 +1,6 @@
 # UG-work
  
-##Hello.
+<h2>Hello.</h2>
 
 This is a collection of my uni undergraduate work.
 
@@ -14,6 +14,6 @@ For recursion, see [Recursion](https://github.com/mikooomich/UG-work/tree/main/s
 
 
 
-###Older work
+<h4>Older work</h4>
 [Webpage](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap) (Highschool CS assignment)
 
