@@ -17,6 +17,7 @@ NodeJS [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
 Stuff I have worked on long ago in the past:
 
 <br>
+
 Highschool CS [assignment](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap/)
 
 
