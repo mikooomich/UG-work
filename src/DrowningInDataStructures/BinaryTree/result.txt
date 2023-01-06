@@ -1,0 +1,5 @@
+4
+22
+Ibuprofen	DB01050	CC(C)CC1=CC=C(C=C1)C(C)C(O)=O	https://go.drugbank.com/drugs/DB01050	approved	-616.946
+Acetaminophen	DB00316	CC(=O)NC1=CC=C(O)C=C1	https://go.drugbank.com/drugs/DB00316	approved	-633.881
+Melatonin	DB01065	COC1=CC=C2NC=C(CCNC(C)=O)C2=C1	https://go.drugbank.com/drugs/DB01065	approved; nutraceutical; vet_approved	-656.005

@@ -1,0 +1,16 @@
+Name	Gender	Age	Occupation	HealthConditions	TimeofArrival
+Carol Young	F	20	Student	None	09:01
+Kevin Murphy	M	32	Software Engineer	None	09:03
+Rachael Taylor	F	36	Cashier	Pregnant	09:04
+Eric Chen	M	61	Retiree	Diabetes	09:13
+Amy Singh	F	24	Student	None	09:28
+Diana Fraser	F	44	Self-employed	Asthma	09:34
+Peter Russell	M	88	Retiree	Cancer	09:46
+Alice Wood	F	28	Student	Primary Immune Deficiency	09:53
+David Zelensky	M	44	Mayor	None	09:59
+Joe Osteen	M	59	Teacher	None	10:06
+Kelly Walter	F	29	Care Giver	Pregnant	10:12
+Esther Valley	F	27	Nurse	None	10:23
+Steve Kerry	M	72	Retiree	Cardiovascular Disease	10:27
+Fiona Bruce	F	45	Journalist	None	10:36
+Terry Apple	M	18	Student	Cancer	10:41

@@ -1,0 +1,263 @@
+<!--Hi. I dislike raw css-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Part 2</title>
+
+    </head>
+
+
+    <style>
+        * {
+            /* all text */
+            font-family: 'Bahnschrift';
+            margin: 2px;
+        }
+
+
+        .main {
+            display: grid;
+            place-items: center;
+            background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.534) 0, rgba(175, 226, 255, 0.644), rgba(255, 255, 255, 0) 50%);
+        }
+
+        /* form elements */
+        .bottom {
+            background-color: rgba(107, 255, 243, 0.432);
+            margin-top: 30px;
+            padding: 10px;
+            box-shadow: 4px 7px rgba(0, 0, 0, 0.37);
+        }
+
+
+        .top {
+            background-color: rgba(255, 255, 255, 0.432);
+            margin-top: 30px;
+            padding: 10px;
+            box-shadow: 4px 7px rgba(0, 0, 0, 0.37);
+        }
+
+        .subButton {
+            width: 100px; 
+            height:40px;  
+            font-family: 'Bahnschrift'; 
+            font-size: 18px;  
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+
+        .fieldErr {
+            display: inline;
+            color: red;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        /* hover */
+        .top:hover{
+            background-color: rgba(196, 196, 196, 0.432);
+        }
+
+        .bottom:hover {
+            background-color: rgba(98, 224, 214, 0.432);
+        }
+    </style>
+
+
+
+
+
+
+    <script>
+
+        let checkLoop;
+
+
+
+        /**
+         * display book below the selection box
+         */ 
+        function displayBook() {
+            let yes = document.getElementById("publ").value;
+            let out = document.getElementById("out");
+
+            if (yes == "-- pick a book --") {
+                out.innerHTML = "";
+                return;
+            }
+
+            out.innerHTML = yes;
+            return;
+        }
+
+
+        /**
+         * Display the book selction in a loop
+         */ 
+        function chkBook() {
+            checkLoop = window.setInterval("displayBook()", 500);
+        }
+        function kill() {
+            clearInterval(checkLoop);
+        }
+
+
+
+        /**
+         * Check if book selection and os selection are valid
+         */ 
+        function checkInputs() {
+            // console.log("checking")
+            try {
+                if (document.getElementById("publ").value === "-- pick a book --" || document.getElementById("formthing")["os"].value === "") {
+                    alert("“Please correct the errors on the page and submit again");
+                    return false;
+                }
+
+                }
+
+            catch (eo) {
+                // alert("Errors in your webpage, please correct before pressing submit");
+                alert(eo);
+                return false;
+            }
+
+        // return true
+        }
+
+
+    
+        /**
+         * verify that a field has content entered
+         * auto parse what the error output id should be, parse error message, etc
+         * I wrote this at 1am, hello
+         * 
+         * @param thing the field to check
+         * 
+         */
+        function verifyField(thing) {
+            let content = document.getElementById("formthing")[thing].value
+            // console.log(pass)
+
+            if (content.length <= 0) { // if empty, complain about it
+                let out = document.getElementById(thing + "Err");
+                out.innerHTML = `${thing} is required`
+                return;
+            }
+
+            let out = document.getElementById(thing+"Err");
+            out.innerHTML = "";
+        }
+
+            
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <body  style="width: 800px;  background-image: linear-gradient(80deg, rgba(0, 151, 197, 0.76), rgba(221, 243, 255, 0.815)) ">
+        <div class="main" style="width: 800px;"> 
+           
+        <H1>Registration Form</H1>
+        <p style="font-size: 10px;">Please fill out your details</p>
+
+
+
+        <form id="formthing" action="" onsubmit="return checkInputs()" style="margin-top: 40px;">
+            
+            <!-- name, email, phone -->
+            <div class="top">
+
+                <h2>User </h2>
+                <div style="display: inline-block; font-size: 24px;">
+                    First Name: <br>
+                    Last Name: <br>
+                    Email: <br>
+                    Phone: <br>
+                </div>
+                
+
+                <div style="display: inline-block;">
+                    <!-- check if blank entry on blur of field box -->
+                    <input type="text" name="First Name" value="" required onblur="verifyField('First Name')"> <p id="First NameErr" class="fieldErr"></p></p>
+                    <input type="text" name="Last Name"  value="" required onblur="verifyField('Last Name')"> <p id="Last NameErr" class="fieldErr"></p></p>
+                    <input type="email" name="Email" value="" placeholder="someone@site.com" required onblur="verifyField('Email')"> <p id="EmailErr" class="fieldErr"></p></p>
+                    <input type="tel" name="phoneNum" value="" placeholder="555-555-555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+                    <!-- phone is not stated to be required input -->
+                </div>
+                
+
+            </div>
+            
+
+            <!-- publications, OS -->
+            <div class="bottom">
+
+
+            
+                <div id="publications">
+                    <h3>Publications</h3>
+                    <!-- loop update the selection, break when user leaves the selection box -->
+                    <select  style="background-color: #fda8a870;"name="Publications" id="publ" onfocus="chkBook()" onblur="kill()">
+                        <option  value="-- pick a book --">-- pick a book --</option>
+                        <option value="MobyDick">Moby Dick</option>
+                        <option value="Frankenstien">Frankenstien</option>
+                    </select>
+
+                    <p id="out" style="color: green;"></p>
+
+                </div>
+            
+
+
+                <h3>OS</h3>
+                Windows<input type="radio" name="os" value="Windows" >
+                MacOS<input type="radio" name="os" value="MacOS">
+                GNU/Linux<input type="radio" name="os" value="GNU/Linux">
+                Other<input type="radio" name="os" value="Other">
+                <br>
+        
+            </div>
+
+             <input type="submit" class="subButton">
+
+          
+
+        </form>
+    </div>
+
+
+    </body>

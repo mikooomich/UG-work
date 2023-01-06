@@ -1,0 +1,55 @@
+<!--login page for sync python-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hewwo</title>
+    </head>
+
+    <script>
+
+        function logon() {
+            let user = document.getElementById("usrname").value;
+            let password = document.getElementById("passwrd").value;
+            let outDisplay = document.getElementById("out");
+
+            let request = new XMLHttpRequest();
+            request.addEventListener("readystatechange", eve => {
+                if (request.readyState == 4) {
+                    // set whatever is recieved from back end
+                    outDisplay.innerHTML = request.responseText;
+                }
+            });
+
+            // request.open("POST", "../../cgi-bin/checkpass-pt2.cgi"); // sand castle
+            request.open("POST", "../cgi-bin/checkpass-pt2.cgi");
+            // send encoded string
+            request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+            request.send("usrname=" + user + "&" + "passwrd=" + password)
+
+        }
+
+
+    </script>
+<body style="background-color: rgb(97, 97, 97);">
+
+    <h1>Please Login</h1> 
+
+        User:
+        <input type="text" placeholder="name" value="" name="usrname" id="usrname">
+        <br>
+        Password:
+        <input type="text" placeholder="password" value="" name="passwrd" id="passwrd">
+
+        <p id="out"></p>
+
+        <button onclick="logon()">Login</button>
+
+
+    
+</body>
+
+
+</html>

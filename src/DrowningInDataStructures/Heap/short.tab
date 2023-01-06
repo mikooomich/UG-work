@@ -1,0 +1,12 @@
+Generic Name	SMILES	Drug Bank ID	URL	Drug Groups	Score
+Amyl Nitrite	CCCCCON=O	DB01612	https://go.drugbank.com/drugs/DB01612	approved	-694.503
+Phosphoric acid	OP(O)(O)=O	DB09394	https://go.drugbank.com/drugs/DB09394	approved	-647.869
+Pimavanserin	CC(C)COC1=CC=C(CNC(=O)N(CC2=CC=C(F)C=C2)C2CCN(C)CC2)C=C1	DB05316	https://go.drugbank.com/drugs/DB05316	approved; investigational	-624.675
+Vorapaxar	[H][C@@]12C[C@]3([H])C[C@@H](CC[C@@]3([H])[C@H](\C=C\C3=CC=C(C=N3)C3=CC(F)=CC=C3)[C@]1([H])[C@@H](C)OC2=O)NC(=O)OCC	DB09030	https://go.drugbank.com/drugs/DB09030	approved	-587.293
+Pipradrol	[H]N1CCCCC1C(O)(C1=CC=CC=C1)C1=CC=CC=C1	DB11584	https://go.drugbank.com/drugs/DB11584	approved	-635.794
+Normethadone	CCC(=O)C(CCN(C)C)(C1=CC=CC=C1)C1=CC=CC=C1	DB11609	https://go.drugbank.com/drugs/DB11609	approved; illicit	-628.078
+Linagliptin	CC#CCN1C(=NC2=C1C(=O)N(CC1=NC3=C(C=CC=C3)C(C)=N1)C(=O)N2C)N1CCC[C@@H](N)C1	DB08882	https://go.drugbank.com/drugs/DB08882	approved	-511.042
+Dextropropoxyphene	CCC(=O)O[C@@](CC1=CC=CC=C1)([C@H](C)CN(C)C)C1=CC=CC=C1	DB00647	https://go.drugbank.com/drugs/DB00647	approved; illicit; investigational; withdrawn	-658.866
+Diethylamino hydroxybenzoyl hexyl benzoate	CCCCCCOC(=O)C1=CC=CC=C1C(=O)C1=CC=C(C=C1O)N(CC)CC	DB11269	https://go.drugbank.com/drugs/DB11269	approved	-625.696
+Pazopanib	CN(C1=CC2=NN(C)C(C)=C2C=C1)C1=CC=NC(NC2=CC=C(C)C(=C2)S(N)(=O)=O)=N1	DB06589	https://go.drugbank.com/drugs/DB06589	approved	-590.197
+Selumetinib	CN1C=NC2=C(F)C(NC3=C(Cl)C=C(Br)C=C3)=C(C=C12)C(=O)NOCCO	DB11689	https://go.drugbank.com/drugs/DB11689	approved; investigational	-631.11

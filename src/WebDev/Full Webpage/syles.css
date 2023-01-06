@@ -1,0 +1,291 @@
+ 
+ /* body fills whole page */
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
+
+ /* for the main body content */
+.centerContent h1,h3 {
+    font-family: 'Bahnschrift'; 
+}
+
+.centerContent {
+    width: clamp(60ch, 90%, 150ch);
+    margin: auto;
+
+    padding: 40px;
+    padding-right: 80px;
+    min-height: 100%
+ }
+ 
+ 
+
+ /* page specific */
+.aboutIMG {
+    width: 300px;
+    height: auto;
+}
+
+.courses {
+    padding: 20px;
+    display: inline-block; 
+    background-color: rgba(121, 228, 255, 0.562);
+    min-width: 300px;
+}
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+/* login page elements */
+#signUp * { 
+    font-family: 'Bahnschrift';
+    margin: 2px;
+}
+
+#login * { 
+    font-family: 'Bahnschrift';
+    margin: 2px;
+}
+
+
+.top {
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.37);
+}
+
+.subButton {
+    width: 100px; 
+    height:40px;  
+    font-family: 'Bahnschrift'; 
+    font-size: 18px;  
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.fieldErr {
+    display: inline;
+    color: red;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* hover */
+.top:hover{
+    background-color: rgba(196, 196, 196, 0.432);
+}
+
+
+
+
+
+
+.main {
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.534) 0, rgba(175, 226, 255, 0.644), rgba(255, 255, 255, 0) 50%);
+}
+
+/* form elements */
+.top {
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.37);
+}
+
+.fieldErr {
+    display: inline;
+    color: red;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* hover */
+.top:hover{
+    background-color: rgba(196, 196, 196, 0.432);
+}
+
+.bottom:hover {
+    background-color: rgba(98, 224, 214, 0.432);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ /* Header and footer */
+.headFoot {
+    background-color: #a58bec;
+    color: rgb(233, 226, 124);
+    width: 97%;
+    
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    min-height: 114px;
+
+}
+.headFoot * {
+    color: rgb(227, 32, 245);
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+}
+
+
+.rIcons * {
+    margin-left: auto;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.navbar {
+    border: none;
+    margin: 0;
+    padding: 5px;
+    min-width: 100px;
+    min-height: 30px;
+}
+
+.navbar:hover {
+    filter: opacity(0.6);
+}
+
+
+/* navbar is the menu buttons */
+/* navbarbar is the button to show menu buttons */
+.navBarBar {
+    display: none;
+}
+.welcome {
+    /* header text */
+    font-size: 30pt; color: rgb(129, 226, 100); position: absolute; font-weight: bold; top: -30px;
+}
+
+
+
+
+
+
+
+/* Footer specific */
+#foot a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #cccaca;
+    top:-6px;
+}
+#foot {
+    padding-left: 40px;
+    padding-top: 40px;
+    display: block;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+}
+
+.headFoot a:hover {
+    font-size: 16pt;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(238, 150, 150, 0.979), rgba(255, 255, 255, 0));
+}
+
+
+
+
+
+
+
+
+/* Body elements */
+p {
+    color: #696969;
+    font-family: 'Bahnschrift';
+    font-size: 14pt;
+}
+
+
+
+
+
+
+
+
+/* tablet mode nav bar */
+@media screen and (max-width: 830px) { 
+    .navContainer {
+        max-width: 400px;
+        display: inline-block;
+    }
+    .navContainer * {
+        margin-bottom: 3px;
+    }
+}
+
+
+/* for mobile phone screen size, tested by resizing window */
+@media screen and (max-width: 580px) { 
+   
+    /* navbar dropdown */
+    .burger {
+        background-color: #69696900;
+        float: left;
+        border: none;
+    }
+
+
+    /* header */
+    .navbar {display: block;}
+    .headFoot {min-height: 250px;}
+    .navContainer {display: none;}
+    .navBarBar {display: inline;}
+
+    /* when hovering over menu keep it open until not hover */
+    .navBarBar:hover +.navContainer {
+        display: inline-block;
+    }
+    .navContainer:hover {
+        padding-right: 20px;
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+
+
+    /*  about page */
+    .aboutIMG {
+        display: block;
+        min-width: 100%;
+    }
+}

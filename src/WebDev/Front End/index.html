@@ -1,0 +1,537 @@
+<!--Hi. I dislike raw css. This took way too long to make-->
+
+<!DOCTYPE html>
+<html>
+
+    <title>Part 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  
+    <style>
+     
+        /* Header and footer */
+        .headFoot {
+            background-color: #87d0e9;
+            color: blue;
+            width: 97%;
+            
+            display: inline-block;
+            padding-left: 40px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            min-width: 400px;
+        }
+        .headFoot * {
+            color: blue;
+            position: relative;
+            top: 25px;
+            font-weight: bold;
+        }
+        .headFoot a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            font-family: 'Bahnschrift';
+        }
+        .headFoot img {
+            /* Icons for home, blog, etc */
+            filter: invert();
+            opacity: 0.3;
+            vertical-align: text-bottom;
+        }
+
+        .rIcons * {
+            /* right side icons */
+            position: relative;
+            top: -25px;
+   
+            float: right;
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+
+
+        /* Footer specific */
+        #foot a {
+            color: #646464;
+            top:-6px;
+        }
+        #foot {
+            padding-left: 40px;
+            padding-top: 40px;
+            bottom: 0;
+            left: 0;
+        }
+
+
+
+        /* Body elements */
+
+        .main {
+            width: clamp(60ch, 70%, 120ch);  
+            margin-bottom: 200px;
+        }
+        .main * {
+            margin-left: 40px;
+        }
+
+        p {
+            color: #696969;
+            font-family: 'Bahnschrift';
+            font-size: 14pt;
+        }
+       
+        #button {
+            color: white;
+            background-color: #87d0e9;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+
+            width: 150px;
+            height: 40px;
+            padding-top: 20px;
+            margin: 40px;
+            margin-left: 0px; 
+        }
+
+  
+
+        /* Right sidebar stuff */
+        .Rsidebar {
+            width: 200px; /*fixed width sidebar*/
+            float: right;
+        }
+        .Rsidebar div {
+            color: #696969;
+            font-family: 'Bahnschrift';
+            font-size: 14pt;
+            margin: 0;
+            padding: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        
+        }
+
+        /* Categories menu */
+      
+        .selector:hover {
+            background-color: #0000000c;
+            font-weight: bold;
+            color: #000000;
+            position: relative;
+            right: 10px;
+            padding: 0px;
+            /* background-color: #000000; */
+        }
+        .selector:hover .bar {
+            display: inline-block;
+            margin-right: 7px;
+        }
+        .bar {
+            height: 20px;
+            width: 3px;
+            background-color: #87d0e9;
+            display: none;
+            vertical-align: middle;
+        }
+        .bar2 {
+            /* this is the bar to left of categories menu. Replaced my canvas from my A2 */
+            height: 190px;
+            width: 3px;
+            background-color: gray;
+            float: left;
+            position: relative;
+            top: 10px;
+            left: 3px;
+        }
+        #highlightBar {
+            float: left; 
+            opacity: 0.8;
+        }
+
+
+
+        /* Recent posts box */
+        #box {
+            background-color: #87d0e9;
+            color: black;
+            font-family: 'Bahnschrift';
+            font-size: 14pt;
+            padding-top: 0px;
+           
+            box-shadow: 4px 5px rgba(0, 0, 0, 0.37);
+        }
+
+        #boxHighlight {
+            padding: 10px; 
+            background-color: #00000010;
+            margin-top: 0px;
+        }
+
+        #pageIcon {
+            width: 25px;
+            height: 25px;
+            opacity: 0.5;
+            float: right;
+        }
+
+
+
+        
+        /* seperator bar for 1000px max width  */
+        .bar3 {
+            width: 20px;
+            display: none;
+            opacity: 0.4;
+            padding: 40px;
+        }
+
+
+        /* dropdown bar thing for mobile phone width */
+        .dropdown {
+            height: 40px;
+            display: none;
+        }
+
+
+
+
+
+        /* have feedback on hover */
+        .Rsidebar:hover {
+            background-color: #44657018;
+        }
+
+        #box:hover {
+            filter: brightness(1.1);
+        }
+
+        #button:hover {
+            filter: brightness(0.95);
+        }
+
+        .headFoot a:hover {
+            font-size: 16pt;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.979), rgba(255, 255, 255, 0));
+        }
+
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Tablet screen, splitscreen desktop */
+        @media screen and (max-width: 1000px) {
+            
+            .main {
+                width: clamp(60ch, 100%, 100ch);
+            }
+
+            /* categories menu needs readjusting */
+            .bar, .bar2{
+                width: 10px;
+                left: 10px;
+            }
+
+            .bar2 {
+                position: relative;
+                left: 10px;
+            }
+
+            .bar3 {
+                display: inline-block;
+            }
+             /* fix  the offset */
+             .selector  {
+                position: relative;
+                left: 10px;
+            }
+            .selector:hover {
+                left: -10px;
+            }
+            .selector:hover .bar {
+                margin-right: 10px;
+            }
+
+      
+
+            /* place sidebar on top of body */
+            .Rsidebar {
+                width: auto;
+                float: none;
+                place-items: center;
+                display: grid;
+            }
+         
+            #box {
+                float: right;
+                height: 300px;
+                width: 200px;
+                margin-top: 30px;
+            }
+        }
+            
+
+        /* only footer formating */
+        @media screen and (max-width: 600px) { 
+            #foot {             
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+
+
+        /* for mobile phone screen size, tested by resizing window */
+        @media screen and (max-width: 570px) { 
+            /* hide rsidebar under a menu */
+            .dropdown {
+                display: block;
+                background-color: rgba(180, 125, 236, 0.342);
+            }
+            .burger {
+                width: 40px;
+                height: 40px;
+                background-color: #696969;
+                float: left;
+            }
+            .Rsidebar {
+                display: none;
+                background-color: rgba(127, 255, 212, 0.192);
+            }
+
+            .text { /*hint text show when hover on button*/
+                display: none;
+            }
+            .burger:hover + .text{
+                display: inline;
+                margin: 0;
+                opacity: 0.8;
+            }
+
+
+            .bar3 {display: none;} /*remove seperator bar to save real estate*/
+
+
+            /* Hover over to open contents AND show until cursor moved off */
+            .dropdown:hover + .Rsidebar {
+                display: grid;
+            }
+            .Rsidebar:hover{
+                display: grid;
+            }       
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let colourToUse = "#e05b5b"; // next colour (red theme)
+    let hiddenState = false; // hidden status of Rsidebar (categories, recent posts), only applies to mobile phone mode
+
+
+    /**
+     * Change the accent colour page-wide
+     */
+    function ChangeColour() {
+        let prevColour = document.getElementById("head").style.backgroundColor; // pull colour from header
+        // set elements
+        document.getElementById("head").setAttribute("style", `background-color: ${colourToUse}`);
+        document.getElementById("button").style.backgroundColor = colourToUse;
+        document.getElementById("foot").style.backgroundColor = colourToUse;
+        document.getElementById("box").style.backgroundColor = colourToUse;
+        
+        // set the highlight bar accent
+        let bars = document.getElementsByClassName("bar");
+        let count = 0;
+        while (count < 5) {
+            bars[count].style.backgroundColor = colourToUse;
+            count ++;
+        }
+
+        colourToUse = prevColour; // save previously used colour
+        return;
+    }
+
+
+    /**
+     * For manual show the categories and recent post menu
+     * The button acts like a togle, overriding hover action
+     */
+    function changeLayout() {
+        var thing = document.getElementById("RSB");
+
+        if (hiddenState == false) {
+            thing.setAttribute("style", `display: grid`);
+            hiddenState = true;
+            return
+        }
+        thing.removeAttribute("style", `display: none`);
+        hiddenState = false; 
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- require manual assign color and id for js to change accents -->
+<header class="headFoot" id="head" style="background-color: #87d0e9;">
+
+    <p style=" font-size: 40pt; color: black; position: absolute; font-weight: bold; top: -50px">My Blog!</p>
+<!-- manual off set home becuause image size -->
+    <img src="./res/home.png" alt="Facebook" style="width: 20px; height: 20px; top:22px;">
+    <a href="https://www.cosc.brocku.ca/~mz21pp/index.html">Home</a>
+
+    <img src="./res/feather.png" alt="Facebook" style="width: 20px; height: 20px;">
+    <a href="https://www.cosc.brocku.ca/~mz21pp/A1/misc.html">Blog</a>
+
+    <img src="./res/mail.png" alt="Facebook" style="width: 20px; height: 20px;">
+    <a href="https://www.cosc.brocku.ca/~mz21pp/A1/about.html">Contact</a>
+
+    <a onclick="ChangeColour();" style="cursor: pointer;">Colour</a>
+
+    <!-- icons on the right -->
+    <div class="rIcons">
+        <img src="./res/wifi.png" alt="Facebook">
+        <img src="./res/twitter.png" alt="Facebook" style="filter: brightness(255);">
+        <img src="./res/fb2.png" alt="Facebook" style="filter: brightness(255);">
+    </div>
+
+</header>
+
+
+<!-- width 800px as per guidelines -->
+<body bgcolor="#f1f2f6"  style="display: block;  padding: 0px; margin: 0; min-width: 400px;">
+
+    <div class="dropdown">
+        <button class="burger" onclick="changeLayout()" ><img src="./res/lines.png" style="width:100%"></button>
+        <p class="text">Click the button for manual control over menu</p> 
+     </div>
+
+
+   
+    <!--everying in Sidebar on the right -->
+    <div class="Rsidebar" id="RSB">
+   
+
+        <div>
+            <div style="display: inline-block; width: 200px">
+                <h2 style="color: black; font-family: 'Bahnschrift';" >Categories</h2>
+        
+                <div class="bar2"></div>
+                <div style="left: 10px; position: relative;">
+                    <div class="selector"><div class="bar"></div>News</div>
+                    <div class="selector"><div class="bar"></div>About</div>
+                    <div class="selector"><div class="bar"></div>Services</div>
+                    <div class="selector"><div class="bar"></div>Portfolio</div>
+                    <div class="selector"><div class="bar"></div>Contact</div>
+                </div>
+
+            </div>
+
+
+            <div class="bar3"><div style="background-color: black; opacity: 0.2; height:250px; width:5px; position: relative; top: 30px;"></div></div>
+
+        <!-- recent posts box -->
+            <div id="box">
+                <h4 id="boxHighlight" >Recent Posts<img src="./res/page.png" alt="icon of page" id="pageIcon"></h4>
+                
+                <div style="padding: 10px;">
+                    <b style="color: black;">More news!</b>
+                    <p style="color: #000000; font-weight:normal">Not generated by GPT-3...</p>
+                </div>
+            </div>
+
+         </div> <!-- end rsidebar inner div -->
+    </div> <!-- end rsidebar -->
+
+    
+    <!-- body text -->
+    <div class="main">
+        <h1 style="font-size: 40pt; font-family: 'Bahnschrift'; margin-top: 5px; margin-bottom: 0px;">A2 is out!</h1>
+
+        <p style="opacity: 0.8;">Published October 1, 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum enim porttitor ultrices euismod. Nullam dictum quam in porta sodales. Aenean eu euismod nisl, ac tempus mauris. Duis ultrices, nulla sed consequat scelerisque, nisl urna elementum lacus, et ultrices nunc enim a erat. Nullam nisl nunc, gravida at urna sed, finibus rhoncus mi. Donec tristique placerat sem, vel tincidunt erat convallis vel. Donec eget justo nulla. Etiam hendrerit faucibus neque, sit amet lacinia risus bibendum a. Nam pharetra rutrum orci vel pellentesque. Nullam non arcu elementum, lobortis tortor ac, sodales erat. Suspendisse sed magna et nisl aliquam rutrum. Vestibulum egestas convallis quam, eleifend vehicula justo porta id.
+            <br><br>
+            Nunc vitae ante et metus vehicula vulputate eget quis turpis. Vivamus tempus et felis nec vulputate. Mauris malesuada ultricies tortor vitae tincidunt. Curabitur viverra sodales nisi. Mauris cursus consequat suscipit. Fusce pharetra ex sem, in vehicula quam tincidunt quis. Quisque convallis eu nisl ac lacinia. Phasellus at sapien vestibulum, ultrices augue eu, condimentum sem.
+          
+            <a id="button" href="https://en.wikipedia.org/wiki/Lorem_ipsum">Read More</a>
+        </p>
+        <div style="width: 540px; height:2px; background-color: #000000; opacity: 0.05;"></div>
+   
+    </div>
+        
+
+</body>
+
+
+<footer class="headFoot" id="foot">
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">WEBSITE NAME</a>
+    <a href="https://www.cosc.brocku.ca/~mz21pp/index.html">HOME</a>
+    <a href="./index.html">BLOG</a>
+    <a href="https://www.cosc.brocku.ca/~mz21pp/A1/misc.html">NEWS & EVENTS</a>
+    <a href="https://brocku.ca/">LOGIN</a>
+    <a href="https://brocku.ca/">SIGN UP</a>
+
+    <p style="color: #8b8a8a; margin-top: 10px; top: 0px; font-weight: normal;">© 2022 Website. All rights reserved.</p>
+    
+
+</footer>
+
+</html>

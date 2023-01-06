@@ -1,0 +1,73 @@
+
+    <div style="background-image: linear-gradient(80deg, rgba(72, 171, 228, 0.76), rgba(221, 243, 255, 0.815)); height: 100%; font-family: 'Bahnschrift'" width="100% ">
+        <div class="main" style="max-width: 1000px; min-width: 200px; margin: auto;"> 
+           
+        <H1>Please Login To Your Account</H1>
+       
+
+        <div id="signUp" style="margin-top: 40px;">
+            
+            <div class="top">
+
+                <h2>Enter your details</h2>
+                <div style="display: inline-block; font-size: 24px;">
+                    Username:<br>
+                    Password:<br><br>
+                    First Name: <br>
+                    Last Name: <br>
+                    Email: <br>
+                </div>
+                
+
+                <div style="display: inline-block;">
+                    <!-- check if blank entry on blur of field box -->
+                    <input type="username" id="signupusername" value="" placeholder="username" required onblur="verifyField('signupusername')"> <p id="signupusernameErr" class="fieldErr"></p></p>
+                    <input type="password" id="signuppassword"  value="" placeholder="password" required onblur="verifyField('signuppassword')"> <p id="signuppasswordErr" class="fieldErr"></p></p>
+                    <br><br>
+                    <input type="text" id="First Name" value="" required placeholder="Bob" required onblur="verifyField('First Name')"> <p id="First NameErr" class="fieldErr"></p></p>
+                    <input type="text" id="Last Name"  value="" placeholder="Jeff" required onblur="verifyField('Last Name')"> <p id="Last NameErr" class="fieldErr"></p></p>
+                    <input type="email" id="Email" value="" placeholder="someone@site.com" required onblur="verifyField('Email')"> <p id="EmailErr" class="fieldErr"></p></p>
+
+                </div>
+                <button onclick="changeLayout();" type="button" style="display: block; background-color: aqua;">I already have an account</button>
+            </div>
+            
+
+      
+            <button onclick="logon('signup');" type="button" style="font-size: 17pt; background-color: aqua;">Create</button>
+        </div>
+
+
+
+
+
+        <div id="login" style="margin-top: 40px; display: none;">
+            
+            <div class="top">
+                <h2>Enter your details</h2>
+                <div style="display: inline-block; font-size: 24px;">
+                    Username:<br>
+                    Password:<br><br>
+                </div>
+                
+
+                <div style="display: inline-block;">
+                    <!-- check if blank entry on blur of field box -->
+                    <input type="username" id="loginusername" value="" placeholder="username" required onblur="verifyField('loginusername')"> <p id="loginusernameErr" class="fieldErr"></p></p>
+                    <input type="password" id="loginpassword"  value="" placeholder="password" required onblur="verifyField('loginpassword')"> <p id="loginpasswordErr" class="fieldErr"></p></p>
+                    <br>
+                  
+                </div>
+                <button onclick="changeLayout();" type="button" style="display: block; background-color: aqua;">Don't have an account?</button>
+
+            </div>
+            
+                <button onclick="logon('login');" type="button" style="font-size: 17pt; background-color: aqua;">Login</button>
+            </div>
+
+            <!-- message box -->
+        <p id="out"></p>
+    </div>
+
+
+</div>

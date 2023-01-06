@@ -1,0 +1,33 @@
+
+<header class="headFoot">
+    
+    <p class="welcome">Welcome To My Page</p>
+
+    <div class="navBarBar">
+        <!-- this is button to show/hide togle menu items -->
+        <button class="burger" onclick="navBarShow()"><img src="./res/lines.png" style="width:30px; height: 40px; top: -0px;"></button>
+        <!-- <p class="text">Click the button for toggling menu in phone width mode</p>  -->
+     </div>
+
+
+     <!-- nav bar -->
+    <div class="navContainer" id="navContainer">
+        <button class="navbar" onclick="switchPage(0);" type="button" style="background-color: rgb(255, 208, 0);">Home</button>
+        <button class="navbar" onclick="switchPage(1);" type="button" style="background-color: rgb(255, 208, 0);">Courses</button>
+        <button class="navbar" onclick="switchPage(3);" type="button" style="background-color: rgb(255, 208, 0);">CV</button>
+        <button class="navbar" onclick="switchPage(2);" type="button" style="background-color: rgb(255, 208, 0);">About</button>
+        <button class="navbar" onclick="switchPage(4);" type="button" style="background-color: rgb(255, 208, 0);">PAST PROJECTS</button>
+
+   </div>
+
+    <!-- login stuff on right -->
+    <div class="rIcons">
+        <button id="loginButton" class="navbar" onclick="switchPage(4);" type="button" style="background-color: rgb(255, 208, 0); float: right;">LOG IN</button>
+        <p id="loggedStatus" style="min-width: 130px; margin: 0; padding: 0; float: right; word-wrap: break-word;">Not Logged in</p>
+        <button id="logOUTButton" class="navbar" onclick="logout();" type="button" style="background-color: rgb(255, 208, 0); display: none;">LOG OUT</button>
+
+    </div>
+
+
+</header>
+
