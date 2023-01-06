@@ -1,29 +1,39 @@
 # UG-work
  
-##Hello.
+<h2>Hello.</h2>
 
-This is a collection of my Computer Science undergraduate work.
+This is a collection of my Undergraduate work, as well as some links to my projects:
 
 
 <br><br>
 
-### Data Structures
-Clinic Maze
+### Personal Projects
+NodeJS [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
+<br>
 
 
-### Other
+### Year 2
 Web Development: [Web Dev](https://github.com/mikooomich/UG-work/tree/main/src/WebDev)
 <br>
 Implementation of data structures: [DrowningInDataStructures](https://github.com/mikooomich/UG-work/tree/main/src/DrowningInDataStructures)
 <br>
 Mips Assembly: [Mips Assembly](https://github.com/mikooomich/UG-work/tree/main/src/MipsAssembly)
-<br>
+
+
+### Year 1
 General Java programming: [QueuesLinkedListInterfaceSorting](https://github.com/mikooomich/UG-work/tree/main/src/QueuesLinkedListInterfaceSorting).
 <br>
 Recursion: [Recursion Maze](https://github.com/mikooomich/UG-work/tree/main/src/Recursion/Maze).
+<br>
 
 
 
+<h3>Older work</h3>
+Stuff I have worked on long ago in the past:
+
+<br>
+
+Highschool CS [assignment](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap/)
 
 
 #### Older work
