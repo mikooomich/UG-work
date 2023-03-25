@@ -10,6 +10,8 @@ This is a collection of my Undergraduate work, as well as some links to my proje
 ### Personal Projects
 NodeJS [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
 <br>
+Java [image converter](https://github.com/mikooomich/imgToBraille/)
+<br>
 
 
 ### Year 2
@@ -18,7 +20,8 @@ Web Development: [Web Dev](https://github.com/mikooomich/UG-work/tree/main/src/W
 Implementation of data structures: [DrowningInDataStructures](https://github.com/mikooomich/UG-work/tree/main/src/DrowningInDataStructures)
 <br>
 Mips Assembly: [Mips Assembly](https://github.com/mikooomich/UG-work/tree/main/src/MipsAssembly)
-
+<br>
+Village Game: no link yet
 
 ### Year 1
 General Java programming: [QueuesLinkedListInterfaceSorting](https://github.com/mikooomich/UG-work/tree/main/src/QueuesLinkedListInterfaceSorting).
