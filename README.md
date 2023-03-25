@@ -34,11 +34,6 @@ Recursion: [Recursion Maze](https://github.com/mikooomich/UG-work/tree/main/src/
 <h3>Older work</h3>
 Stuff I have worked on long ago in the past:
 
-<br>
-
-Highschool CS [assignment](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap/)
-
 
 #### Older work
-[Webpage](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap) (High school CS assignment)
-
+Highschool CS [assignment](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap) 
