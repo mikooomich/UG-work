@@ -6,12 +6,15 @@ This is a collection of my Undergraduate work, as well as some links to my proje
 
 
 ## Personal Projects
-NodeJS [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
+JavaScript (NodeJS) [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
 <br>
 Java [image converter](https://github.com/mikooomich/imgToBraille/)
 <br>
 Java [Local Music Player](https://github.com/mikooomich/jankMusicPlayer)
 <br>
+Java [Web app]([https://github.com/mikooomich/jankMusicPlayer](https://github.com/mikooomich/discoverlincoln-t2-c8)) in React and Express.js
+<br>
+
 
 ### Android Stuff
 *All I wanted was more granular volume control, now look at the mess I've made...*
