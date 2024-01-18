@@ -12,7 +12,7 @@ Java [image converter](https://github.com/mikooomich/imgToBraille/)
 <br>
 Java [Local Music Player](https://github.com/mikooomich/jankMusicPlayer)
 <br>
-Java [Web app]([https://github.com/mikooomich/jankMusicPlayer](https://github.com/mikooomich/discoverlincoln-t2-c8)) in React and Express.js
+Java [Web app](https://github.com/mikooomich/discoverlincoln-t2-c8) in React and Express.js
 <br>
 
 
