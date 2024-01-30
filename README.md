@@ -1,22 +1,24 @@
 # UG-work
- 
-### Hello.
+Hello. This is a collection of my Undergraduate work, as well as some links to my projects.
 
-This is a collection of my Undergraduate work, as well as some links to my projects.
-
+## Year 3
+Web Development Co-op at Civiconnect: [Mock Project](https://github.com/mikooomich/discoverlincoln-t2-c8) web application
 
 ## Personal Projects
+Adding features to Tublar Android app (Formerly Newpipe Sponsorblock)
+- [Pull request](https://github.com/polymorphicshade/Tubular/pull/5)
+  
+
+Java [Local Music Player](https://github.com/mikooomich/jankMusicPlayer)
+<br>
 JavaScript (NodeJS) [Discord bot](https://github.com/mikooomich/Renegade-Yeet/)
 <br>
 Java [image converter](https://github.com/mikooomich/imgToBraille/)
 <br>
-Java [Local Music Player](https://github.com/mikooomich/jankMusicPlayer)
-<br>
-Java [Web app](https://github.com/mikooomich/discoverlincoln-t2-c8) in React and Express.js
-<br>
 
 
-### Android Stuff
+
+### Android Device Stuff
 *All I wanted was more granular volume control, now look at the mess I've made...*
 
 ASUS Zenfone 8
@@ -29,16 +31,12 @@ OnePlus 6
 - See my personal [device tree(s)](https://github.com/mikooomich/android_device_oneplus_sdm845-common) for details.
 
 
-## Year 3
-Web Development Co-op at Civiconnect: [Mock Project](https://github.com/mikooomich/discoverlincoln-t2-c8)
-
-
 ## Year 2
-Web Development: [Personal Website](https://github.com/mikooomich/UG-work/tree/main/src/WebDev)
+Web Development: [Personal Website](/src/WebDev)
 <br>
-Implementation of data structures: [DrowningInDataStructures](https://github.com/mikooomich/UG-work/tree/main/src/DrowningInDataStructures)
+Implementation of data structures: [DrowningInDataStructures](/src/DrowningInDataStructures)
 <br>
-Mips Assembly: [Mips Assembly](https://github.com/mikooomich/UG-work/tree/main/src/MipsAssembly)
+Mips Assembly: [Mips Assembly](/src/MipsAssembly)
 <br>
 Village Game: [Clash Of Clans Bootleg](https://github.com/mikooomich/clash-of-clans-bootleg)
 
@@ -47,11 +45,11 @@ Village Game: [Clash Of Clans Bootleg](https://github.com/mikooomich/clash-of-cl
 ### Older work
 
 #### Year 1
-General Java programming: [QueuesLinkedListInterfaceSorting](https://github.com/mikooomich/UG-work/tree/main/src/QueuesLinkedListInterfaceSorting).
+General Java programming: [QueuesLinkedListInterfaceSorting](/src/QueuesLinkedListInterfaceSorting).
 <br>
-Recursion: [Recursion Maze](https://github.com/mikooomich/UG-work/tree/main/src/Recursion/Maze).
+Recursion: [Recursion Maze](/src/Recursion/Maze).
 <br>
 
 
 #### Relics of long ago in the past:
-Highschool CS [assignment](https://github.com/mikooomich/UG-work/tree/main/src/Old/fix-wage-gap) 
+Highschool CS [assignment](/src/Old/fix-wage-gap) 
