@@ -16,7 +16,7 @@ Hello. This is a collection of my Undergraduate work, as well as some links to m
 
 ASUS Zenfone 8
 - Updating to Android 14 (LineageOS 21) & various quality of life improvements.
-- Porting per-app volume to LineageOS: [1](https://github.com/mikooomich/android_frameworks_base) [2](https://github.com/mikooomich/android_packages_apps_Settings) [3](https://github.com/mikooomich/android_frameworks_av)
+- Porting per-app volume to LineageOS: [Gerrit](https://review.lineageos.org/q/per-app-volume))
 - [Device tree](https://github.com/mikooomich/android_device_asus_sake), [Kernel](https://github.com/mikooomich/android_kernel_asus_sm8350)
 
 OnePlus 6
