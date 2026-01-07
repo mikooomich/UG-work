@@ -9,7 +9,6 @@ public class Maze {
     /**
      * This class aims to find a solution to a maze.
      *
-     * @author Michael Zhou
      * @course COSC 1P03
      * @assignment #4 (Part 2)
      * @version 1.0

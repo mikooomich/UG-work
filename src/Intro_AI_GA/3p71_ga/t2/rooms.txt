@@ -1,0 +1,6 @@
+name,capacity
+Large Lecture 1,100
+Large Lecture 2,75
+Medium Lecture,35
+Lab A,30
+Lab B,30

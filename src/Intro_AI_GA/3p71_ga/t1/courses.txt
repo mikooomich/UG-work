@@ -1,0 +1,26 @@
+name,professor,students,duration
+Math 101,Dr. Smith,71,2
+Physics 401,Dr. Smith,37,3
+Chemistry 101,Dr. Smith,28,3
+Biology 301,Dr. Smith,87,3
+CS 101,Dr. Smith,41,3
+Math 301,Dr. Jones,80,2
+Physics 101,Dr. Jones,68,2
+Chemistry 201,Dr. Jones,38,2
+Biology 401,Dr. Jones,48,2
+CS 101,Dr. Jones,56,2
+Math 101,Dr. Brown,75,3
+Physics 101,Dr. Brown,91,1
+Chemistry 101,Dr. Brown,95,3
+Biology 201,Dr. Brown,99,1
+CS 301,Dr. Brown,42,3
+Math 101,TBD,59,3
+Physics 101,TBD,78,3
+Chemistry 101,TBD,27,3
+Biology 201,TBD,91,1
+CS 401,TBD,84,3
+Math 201,TBD2,95,2
+Physics 401,TBD2,41,1
+Chemistry 401,TBD2,82,1
+Biology 401,TBD2,84,1
+CS 101,TBD2,52,2

@@ -7,7 +7,6 @@ import QueuesLinkedListInterfaceSorting.Collections.List;
 * This interface defines the additional sort function extension to the List interface
  * @see Collections.List
  *
- * @author Michael Zhou
  * @course COSC 1P03
  * @assignment #5 (Part B)
  * @version 1.0

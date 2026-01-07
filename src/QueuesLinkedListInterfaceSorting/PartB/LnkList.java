@@ -14,7 +14,6 @@ import QueuesLinkedListInterfaceSorting.Collections.NoItemException;
  * This class will reuse the NoItemException class, Node class, and
  * List interface from Collections package provided from lecture.
  *
- * @author Michael Zhou
  * @course COSC 1P03
  * @assignment #5
  * @version 1.0

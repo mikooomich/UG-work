@@ -5,10 +5,8 @@ public class Drug {
     /**
      * This class is a representation of a Drug with it's attributes/properties.
      *
-     * @author Michael Zhou
      * @course COSC 2P03
      * @assignment #2
-     * @student_id 7265762
      * @version 1.0
      * @date 2022-10-12
      */

@@ -7,7 +7,6 @@ package QueuesLinkedListInterfaceSorting.PartB;
  * This class does is a testing class for the sorting (Part B).
  * KeyedChar from collections package will be reused
  *
- * @author Michael Zhou
  * @course COSC 1P03
  * @assignment #5
  * @version 1.0

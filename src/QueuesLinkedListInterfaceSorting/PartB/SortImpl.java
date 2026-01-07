@@ -9,7 +9,6 @@ public class SortImpl<E extends Comparable<E>> extends LnkList<E> implements Sor
      * List interface from Collections package provided from lecture.
      * This class will reuse part A
      *
-     * @author Michael Zhou
      * @course COSC 1P03
      * @assignment #5 (Part B)
      * @version 1.0
