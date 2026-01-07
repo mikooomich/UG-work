@@ -24,8 +24,8 @@ I'm a passionate individual who adores programming, music, and creating cool thi
 
 ## Android Device Development
 
-LineageOS device maintainer stuff  for ASUS Zenfone 8 (sm8350)
-- Bring up from versions LineageOS 20.0 (Android 13) through LineageOS 23.x (Android 16) 
+LineageOS device maintainer stuff for ASUS Zenfone 8 (sm8350)
+- Device bring up for versions LineageOS 20.0 (Android 13) through LineageOS 23.x (Android 16)
 - [Device tree](https://github.com/LineageOS/android_device_asus_sake), [Kernel](https://github.com/LineageOS/android_kernel_asus_sm8350)
 - [Official](https://download.lineageos.org/devices/sake/builds)
 - [Unofficial builds](https://github.com/mikooomich/android_device_asus_sake)
@@ -34,7 +34,7 @@ LineageOS device maintainer stuff  for ASUS Zenfone 8 (sm8350)
 ## Miscellaneous contributions / projects
 - [Tubular](https://github.com/polymorphicshade/Tubular) (previously NewPipe SponsorBlock)
 - [TPFanCtrl2](https://github.com/Shuzhengz/TPFanCtrl2)
-- For other contributions, see https://github.com/mikooomich/UG-work
+- For other contributions, they are on my GitHub profile
 
 
 ## Miscellaneous Personal Projects
